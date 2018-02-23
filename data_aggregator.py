@@ -77,7 +77,10 @@ def build_dataset():
 
     return pd.DataFrame(data_dict_list)
 
+def save_df(df):
+    df.to_csv("tcga_data.csv", sep = ';')
+
 if __name__ == "__main__":
     #check_data()
     df = build_dataset()
-    print df
+    save_df(df)
