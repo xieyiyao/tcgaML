@@ -1,0 +1,12 @@
+p = 1 neighbors = 3
+Score: 0.862694300518
+p = 2 neighbors = 3
+Score: 0.806563039724
+p = 3 neighbors = 3
+Score: 0.67530224525
+p = 1 neighbors = 5
+Score: 0.856649395509
+p = 2 neighbors = 5
+Score: 0.816925734024
+p = 3 neighbors = 5
+Score: 0.702936096718
