@@ -9,34 +9,27 @@ from pre_processing import pre_process, delete_low_variance
 
 
 def main():
-    #import data
-
     
-    #df.dropna(axis=1, how='any')
-    #df = normalize(df)
-    
-    #print(df.iloc[:,2:3])
-    #print(np.isfinite((df.iloc[:,2:3])).all())
-
-    #low_var = VarianceThreshold(threshold = 0.1)
-    #low_var.transform(x_train)
-    #low_var.transform(x_test)
-    
-    #print(x_train)
-    #print(np.isnan(x).all())
-    #print(np.isfinite(x.any()))
+    # preprocess includes: spliting and using standard scaler to transform
     
     x_train, x_test, y_train, y_test = pre_process()
     
-    print(x_train.shape)
+    
+    ### feature selection with low variance
+    
+    #print(x_train.shape)
     
     x_train, x_test = delete_low_variance(x_train, x_test) 
     
-    print(x_train.shape)
-    print(x_test.shape)
+    #print(x_train.shape)
+    #print(x_test.shape)  #this deleted 218 features
+    strength = 1
+    model = LogisticRegression(C=strength, penalty='l1', solver="saga", multi_class="multinomial")
+    model.fit(x_train, y_train)
+    print("Accuracy score for test is: %.6f" % model.score(x_test, y_test))
     
     
-                                                                 
+                                                     
 
 if __name__== "__main__":
     main()
