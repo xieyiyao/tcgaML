@@ -20,3 +20,9 @@ def pre_process():
     x_train, x_test = scaler.transform(x_train), scaler.transform(x_test)
     
     return (x_train,x_test,y_train,y_test)
+
+def delete_low_variance(x_train, x_test):
+    low_var = VarianceThreshold(threshold = 0.1)
+    low_var.fit(x_train)
+    x_train, x_test = low_var.transform(x_train), low_var.transform(x_test)
+    return (x_train, x_test)

@@ -5,7 +5,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.feature_selection import VarianceThreshold
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
-from pre_processing import pre_process
+from pre_processing import pre_process, delete_low_variance
 
 
 def main():
@@ -28,7 +28,13 @@ def main():
     
     x_train, x_test, y_train, y_test = pre_process()
     
-    print x_train
+    print(x_train.shape)
+    
+    x_train, x_test = delete_low_variance(x_train, x_test) 
+    
+    print(x_train.shape)
+    print(x_test.shape)
+    
     
                                                                  
 
