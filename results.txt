@@ -1,12 +1,30 @@
-p = 1 neighbors = 3
-Score: 0.862694300518
-p = 2 neighbors = 3
-Score: 0.806563039724
-p = 3 neighbors = 3
-Score: 0.67530224525
-p = 1 neighbors = 5
-Score: 0.856649395509
-p = 2 neighbors = 5
-Score: 0.816925734024
-p = 3 neighbors = 5
-Score: 0.702936096718
+kNN with no features deleted
+kNN: p = 1 neighbors = 3
+Score: 0.87219343696
+kNN: p = 2 neighbors = 3
+Score: 0.834196891192
+kNN: p = 3 neighbors = 3
+Score: 0.701208981002
+kNN: p = 1 neighbors = 5
+Score: 0.860103626943
+kNN: p = 2 neighbors = 5
+Score: 0.834196891192
+kNN: p = 3 neighbors = 5
+Score: 0.715025906736
+
+kNN with low variance features deleted
+kNN: p = 1 neighbors = 3
+Score: 0.87219343696
+kNN: p = 2 neighbors = 3
+Score: 0.834196891192
+kNN: p = 3 neighbors = 3
+Score: 0.701208981002
+kNN: p = 1 neighbors = 5
+Score: 0.860103626943
+kNN: p = 2 neighbors = 5
+Score: 0.834196891192
+kNN: p = 3 neighbors = 5
+Score: 0.715025906736
+
+logistic (no features deleted): 0.963731
+logistic (low variance features deleted): 0.963731
