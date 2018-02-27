@@ -25,3 +25,11 @@ def delete_low_variance(x_train, x_test):
     low_var.fit(x_train)
     x_train, x_test = low_var.transform(x_train), low_var.transform(x_test)
     return (x_train, x_test)
+
+def drop_outliers(df):
+    for column in df:
+        if column == 'Cancer Type':
+            continue
+        df = df[df[column] <= 3]
+        df = df[df[column] >= -3]
+    return df
