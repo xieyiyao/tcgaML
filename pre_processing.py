@@ -10,6 +10,7 @@ def pre_process():
 
     y = df.iloc[:,1:2] #since first column contains indices
     x = df.iloc[:,2:]
+    features = list(x) #all the feature names
 
 
     x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.2,random_state=0)
