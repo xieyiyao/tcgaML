@@ -30,9 +30,9 @@ def main():
     print(model.get_params)
     print("Accuracy score for test is: %.6f" % model.score(x_test, y_test))
     print("Strength is: %.2f" % strength)
-    print("F-1 score(micro) for test is: %.10f " % f1_score(y_test,prediction,average= 'micro'))
-    print("F-1 score(macro) for test is: %.10f " % f1_score(y_test,prediction,average= 'macro'))
-
+    #print("F-1 score(micro) for test is: %.10f " % f1_score(y_test,prediction,average= 'micro'))
+    #print("F-1 score(macro) for test is: %.10f " % f1_score(y_test,prediction,average= 'macro'))
+    print "F-1 score(macro) for test is: %.10f " % f1_score(y_test,prediction,average= 'weighted')
 
 
 
