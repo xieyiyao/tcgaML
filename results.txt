@@ -143,3 +143,27 @@ the criteria is: gini
 the mean accuracy is: 0.9050086356
 F-1 score(micro) for test is: 0.9050086356
 F-1 score(macro) for test is: 0.9044105818
+
+---------------------------------------------
+kNN MODEL RESULTS
+kNN: p = 1 neighbors = 3
+Weighted F-1 Score: 0.865378142899
+kNN: p = 2 neighbors = 3
+Weighted F-1 Score: 0.829934281361
+kNN: p = 3 neighbors = 3
+Weighted F-1 Score: 0.694501644175
+kNN: p = 1 neighbors = 5
+Weighted F-1 Score: 0.85262428158
+kNN: p = 2 neighbors = 5
+Weighted F-1 Score: 0.829480762182
+kNN: p = 3 neighbors = 5
+Weighted F-1 Score: 0.709450093452
+
+RANDOM FOREST RESULTS (weighted F-1 scores)
+low variance deleted: 0.944530707546
+all features: 
+Weighted F-1 Score: 0.931073062552
+Weighted F-1 Score: 0.933708870886
+Weighted F-1 Score: 0.940491111676
+Weighted F-1 Score: 0.945985155028
+Weighted F-1 Score: 0.92259414546
