@@ -1,0 +1,145 @@
+kNN with no features deleted
+kNN: p = 1 neighbors = 3
+Score: 0.87219343696
+kNN: p = 2 neighbors = 3
+Score: 0.834196891192
+kNN: p = 3 neighbors = 3
+Score: 0.701208981002
+kNN: p = 1 neighbors = 5
+Score: 0.860103626943
+kNN: p = 2 neighbors = 5
+Score: 0.834196891192
+kNN: p = 3 neighbors = 5
+Score: 0.715025906736
+
+kNN with low variance features deleted
+kNN: p = 1 neighbors = 3
+Score: 0.87219343696
+kNN: p = 2 neighbors = 3
+Score: 0.834196891192
+kNN: p = 3 neighbors = 3
+Score: 0.701208981002
+kNN: p = 1 neighbors = 5
+Score: 0.860103626943
+kNN: p = 2 neighbors = 5
+Score: 0.834196891192
+kNN: p = 3 neighbors = 5
+Score: 0.715025906736
+
+logistic (low variance features deleted highest so far): 0.972366
+
+
+<bound method LogisticRegression.get_params of LogisticRegression(C=1, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='multinomial',
+          n_jobs=1, penalty='l1', random_state=None, solver='saga',
+          tol=0.0001, verbose=0, warm_start=False)>
+
+Accuracy score for test is: 0.963731
+Strength is: 1.00,10,100
+F-1 score(micro) for test is: 0.9637305699
+F-1 score(macro) for test is: 0.9575504159
+
+
+//sag and saga give same results
+<bound method LogisticRegression.get_params of LogisticRegression(C=0.01, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='multinomial',
+          n_jobs=1, penalty='l2', random_state=None, solver='saga',
+          tol=0.0001, verbose=0, warm_start=False)>
+
+Accuracy score for test is: 0.963731
+Strength is: 0.01,0.10, 1, 10.00
+F-1 score(micro) for test is: 0.9637305699
+F-1 score(macro) for test is: 0.9575504159
+
+
+<bound method LogisticRegression.get_params of LogisticRegression(C=1, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='saga', tol=0.0001,
+          verbose=0, warm_start=False)>
+Accuracy score for test is: 0.970639
+Strength is: 1.00
+F-1 score(micro) for test is: 0.9706390328
+F-1 score(macro) for test is: 0.9647441259
+
+<bound method LogisticRegression.get_params of LogisticRegression(C=1, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l1', random_state=None, solver='saga', tol=0.0001,
+          verbose=0, warm_start=False)>
+Accuracy score for test is: 0.967185
+Strength is: 1.00
+F-1 score(micro) for test is: 0.9671848014
+F-1 score(macro) for test is: 0.9558943399
+
+<bound method LogisticRegression.get_params of LogisticRegression(C=1, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='lbfgs', tol=0.0001,
+          verbose=0, warm_start=False)>
+Accuracy score for test is: 0.965458
+Strength is: 1.00
+F-1 score(micro) for test is: 0.9654576857
+F-1 score(macro) for test is: 0.9583198237
+
+<bound method LogisticRegression.get_params of LogisticRegression(C=1, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='multinomial',
+          n_jobs=1, penalty='l2', random_state=None, solver='lbfgs',
+          tol=0.0001, verbose=0, warm_start=False)>
+Accuracy score for test is: 0.956822
+Strength is: 1.00
+F-1 score(micro) for test is: 0.9568221071
+F-1 score(macro) for test is: 0.9506175945
+
+<bound method LogisticRegression.get_params of LogisticRegression(C=1, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)>
+Accuracy score for test is: 0.965458
+Strength is: 1.00
+F-1 score(micro) for test is: 0.9654576857
+F-1 score(macro) for test is: 0.9601777022
+
+<bound method LogisticRegression.get_params of LogisticRegression(C=1, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l1', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)>
+Accuracy score for test is: 0.972366
+Strength is: 1.00
+F-1 score(micro) for test is: 0.9723661485
+F-1 score(macro) for test is: 0.9643978900
+
+
+NO CROSS VALIDATION DECISION tree
+\\ random_state = 0
+the criteria is: gini
+('the mean accuracy is: %.10f', 0.9084628670120898)
+the criteria is: entropy
+('the mean accuracy is: %.10f', 0.9205526770293609)
+
+\\no specify random_state
+the criteria is: entropy
+('the mean accuracy is: %.10f', 0.92573402417962)
+the criteria is: gini
+('the mean accuracy is: %.10f', 0.9015544041450777)
+
+
+\\f-1 score version, random_state = 0
+the criteria is: entropy
+the mean accuracy is: 0.9205526770
+F-1 score(micro) for test is: 0.9205526770
+F-1 score(macro) for test is: 0.9163969581
+
+the criteria is: gini
+the mean accuracy is: 0.9084628670
+F-1 score(micro) for test is: 0.9084628670
+F-1 score(macro) for test is: 0.8999685616
+
+\\f-1 score version, no specify random_state
+the criteria is: entropy
+the mean accuracy is: 0.9274611399
+F-1 score(micro) for test is: 0.9274611399
+F-1 score(macro) for test is: 0.9254488734
+
+
+the criteria is: gini
+the mean accuracy is: 0.9050086356
+F-1 score(micro) for test is: 0.9050086356
+F-1 score(macro) for test is: 0.9044105818
