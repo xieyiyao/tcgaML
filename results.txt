@@ -161,9 +161,23 @@ Weighted F-1 Score: 0.709450093452
 
 RANDOM FOREST RESULTS (weighted F-1 scores)
 low variance deleted: 0.944530707546
-all features: 
-Weighted F-1 Score: 0.931073062552
-Weighted F-1 Score: 0.933708870886
-Weighted F-1 Score: 0.940491111676
-Weighted F-1 Score: 0.945985155028
-Weighted F-1 Score: 0.92259414546
+all features: 0.931073062552
+entropy low variance deleted: 0.944638658764
+entropy all features: 0.925094637113
+
+LOGISTIC REGRESSION RESULTS (weighted F-1 scores)
+penalty='l1', solver="saga", multi_class="multinomial": 0.9636952399
+penalty='l2', solver="saga", multi_class="multinomial": 0.9653883325
+penalty='l2', solver="saga", multi_class="ovr": 0.9706439371
+penalty='l1', solver="saga", multi_class="ovr": 0.9672477667
+penalty='l2', solver="lbfgs", multi_class="multinomial": 0.9569190286
+penalty='l2', solver="lbfgs", multi_class="ovr": 0.9654189012
+penalty='l2', solver="liblinear", multi_class="ovr": 0.9653660523
+penalty='l1', solver="liblinear", multi_class="ovr": 0.9723302840
+
+DECISION TREE RESULTS (weighted F1 scores)
+gini low variance deleted: 0.9087803046
+gini all features: 0.9119682849
+entropy all features: 0.9223861431
+entropy low variance deleted: 0.9257342661
+Weighted F-1 Score:

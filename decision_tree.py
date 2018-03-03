@@ -40,21 +40,21 @@ def main():
 
     #print(x_train.shape)
 
-    #x_train, x_test= delete_low_variance(x_train, x_test)
+    x_train, x_test= delete_low_variance(x_train, x_test)
 
     #print(x_train.shape)
     #print(x_test.shape)  #this deleted 218 features
-    criteria = 'gini'
+    criteria = 'entropy'
     model = DecisionTreeClassifier(criterion = criteria)
     model.fit(x_train,y_train)
     prediction = model.predict(x_test)
 
     #visualize_tree(model,features)
 
-    print('the criteria is: ' + criteria)
-    print('the mean accuracy is: %.10f' % model.score(x_test,y_test))
-    print("F-1 score(micro) for test is: %.10f " % f1_score(y_test,prediction,average= 'micro'))
-    print("F-1 score(macro) for test is: %.10f " % f1_score(y_test,prediction,average= 'macro'))
+    #print('the criteria is: ' + criteria)
+    #print('the mean accuracy is: %.10f' % model.score(x_test,y_test))
+    #print("F-1 score(micro) for test is: %.10f " % f1_score(y_test,prediction,average= 'micro'))
+    print("F-1 score(weighted) for test is: %.10f " % f1_score(y_test,prediction,average= 'weighted'))
 
 
 
